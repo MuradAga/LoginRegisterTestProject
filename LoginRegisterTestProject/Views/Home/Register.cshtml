@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model UserToAddDTO
+@{
+    Layout = null;
+}
+
+
+<form asp-controller="Home" asp-action="AddUser" class="login100-form validate-form">
+    <span class="login100-form-logo">
+        <img class="globe" src="/img/icons/globe.png"></img>
+    </span>
+
+    <span class="login100-form-title p-b-34 p-t-27">
+        Sign Up
+    </span>
+
+    <div class="wrap-input100 validate-input" data-validate="Enter username">
+        <input id="username" class="input100" type="text" name="UserName" placeholder="Username">
+        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input" data-validate="Enter name">
+        <input class="input100" type="text" name="Name" placeholder="Name">
+        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input" data-validate="Enter surname">
+        <input class="input100" type="text" name="Surname" placeholder="Surname">
+        <span class="focus-input100" data-placeholder="&#xf207;"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input" data-validate="Enter password">
+        <input class="input100" type="password" name="Password" placeholder="Password">
+        <span class="focus-input100" data-placeholder="&#xf191;"></span>
+    </div>
+
+    <div class="container-login100-form-btn">
+        <button class="login100-form-btn">
+            Sign Up
+        </button>
+    </div>
+
+    <div class="text-center p-t-90">
+        <a class="txt1" href="/Login/Index">
+            Login
+        </a>
+    </div>
+</form>
